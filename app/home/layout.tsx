@@ -1,8 +1,9 @@
 'use client'
-import Header from "@/components/Elements/Header";
-import Footer from "@/components/Footer";
-import Sidebar from "@/components/home/SideBar";
-import { useContext, useEffect, useRef, useState } from "react";
+import React from 'react'
+
+import Header from "../../components/Elements/Header";
+import Footer from "../../components/Footer";
+import Sidebar from "../../components/home/SideBar";
 
 export default function DashboardLayout(props:any) {
 
