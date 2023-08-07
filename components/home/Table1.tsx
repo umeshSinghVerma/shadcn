@@ -2,13 +2,13 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-const Table4 = () => {
+const Table1 = () => {
   const tableItems = [
     {
       name: "יסויו תינד לש הנותחה",
       date: "10.03.23",
       status: "תרשואמ",
-      type: "UnActive",
+      type: "Active",
       content2: "אביגדור אירועים",
       plan: "اشتراك شهري",
     },
@@ -16,7 +16,7 @@ const Table4 = () => {
       name: "יסויו תינד לש הנותחה",
       date: "10.03.23",
       status: "תרשואמ",
-      type: "UnActive",
+      type: "Active",
       content2: "אביגדור אירועים",
       plan: "اشتراك شهري",
     },
@@ -24,7 +24,7 @@ const Table4 = () => {
       name: "יסויו תינד לש הנותחה",
       date: "10.03.23",
       status: "תרשואמ",
-      type: "UnActive",
+      type: "Active",
       content2: "אביגדור אירועים",
       plan: "اشتراك سنوي",
     },
@@ -32,7 +32,7 @@ const Table4 = () => {
       name: "יסויו תינד לש הנותחה",
       date: "10.03.23",
       status: "תרשואמ",
-      type: "UnActive",
+      type: "Active",
       content2: "אביגדור אירועים",
       plan: "اشتراك شهري",
     },
@@ -40,14 +40,14 @@ const Table4 = () => {
       name: "יסויו תינד לש הנותחה",
       date: "10.03.23",
       status: "תרשואמ",
-      type: "UnActive",
+      type: "Active",
       content2: "אביגדור אירועים",
       plan: "اشتراك سنوي",
     },
   ];
   const router = useRouter();
   return (
-    <div className="max-w-screen-xl mx-auto px-4 md:px-8">
+    <div className=" mx-auto px-4 md:px-8">
       <div className="mt-8 relative h-max overflow-auto">
         <table className="w-full table-auto text-sm text-right">
           <thead className="text-gray-600 font-medium border-b">
@@ -120,7 +120,7 @@ const Table4 = () => {
                     e.stopPropagation();
                   }}
                     type="checkbox"
-                    class="h-3 w-3 cursor-pointer rounded border-gray-300"
+                    className="h-3 w-3 cursor-pointer rounded border-gray-300"
                   />
                 </td>
                 <td className="pr-6 py-2 cursor-pointer whitespace-nowrap hover:underline" onClick={
@@ -184,4 +184,4 @@ const Table4 = () => {
   );
 };
 
-export default Table4;
+export default Table1;

@@ -78,7 +78,7 @@ const Table3 = () => {
                 <td>
                   <input
                     type="checkbox"
-                    class="h-3 w-3 cursor-pointer rounded border-gray-300"
+                    className="h-3 w-3 cursor-pointer rounded border-gray-300"
                   />
                 </td>
                 <td className="pr-6 py-3 whitespace-nowrap">{item.name}</td>
