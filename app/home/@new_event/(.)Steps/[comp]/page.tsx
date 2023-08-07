@@ -1,12 +1,12 @@
 'use client'
-import DateSelector from '@/components/Elements/DateSelector'
+import { DateSelector } from '@/components/Elements/DateSelector'
 import MultipleSelector from '@/components/Elements/MultipleSelector'
 import PostModal from '@/components/home/PostModal'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function page({ params }) {
+export default function page({ params }:any) {
     const firstColumn = [
         {
             title: "Name",
@@ -78,7 +78,7 @@ export default function page({ params }) {
                             <div className='flex-col flex sm:flex-row text-sm gap-9 mt-4' style={{ minHeight: '200px' }}>
                                 <div className=' flex flex-col'>
                                     <p className='mb-2'>סוג האירוע *</p>
-                                    <MultipleSelector text={'בחר מרשימה'} />
+                                    <MultipleSelector />
                                 </div>
                                 <div className=' flex flex-col'>
                                     <p className='mb-2'>תאריך האירוע *</p>

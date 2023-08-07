@@ -6,7 +6,7 @@ const MyForm = () => {
       <div className=" mx-auto flex flex-col items-center justify-center sm:justify-start">
         <div className="w-full flex flex-col my-4 sm:my-2 gap-y-2 items-center sm:flex-row justify-start gap-x-4">
           <div className="max-w-md px-2 sm:my-8">
-            <label for="input-1" className="block font-bold py-2 text-gray-500">
+            <label htmlFor="input-1" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
             <div
@@ -22,7 +22,7 @@ const MyForm = () => {
             </div>
           </div>
           <div className="max-w-md px-2 sm:my-8">
-            <label for="input-2" className="block font-bold py-2 text-gray-500">
+            <label htmlFor="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
             <div
@@ -42,7 +42,7 @@ const MyForm = () => {
           <div className="w-full flex flex-col-reverse items-center sm:flex-row justify-center sm:justify-between gap-x-6">
             <div className="max-w-md px-2 my-1">
               <label
-                for="input-3"
+                htmlFor="input-3"
                 className="block font-bold py-2 text-gray-500"
               >
                 התחל להקליד
@@ -67,7 +67,7 @@ const MyForm = () => {
             <div className="max-w-md px-2 my-1">
               <div className="max-w-md px-2 mx-auto">
                 <label
-                  for="input-4"
+                  htmlFor="input-4"
                   className="block font-bold py-2 text-gray-500"
                 >
                   התחל להקלי
@@ -89,7 +89,7 @@ const MyForm = () => {
           <div className="w-full flex flex-col items-center sm:flex-row justify-center sm:justify-start gap-x-6">
             <div className="text-center sm:text-right w-full my-4">
               <label
-                for="input-3"
+                htmlFor="input-3"
                 className="block font-bold py-2 pl-32 text-gray-500"
               >
                 התחל להקליד
@@ -145,7 +145,7 @@ const MyForm = () => {
         </div>
         <div className="w-full flex flex-wrap my-2 items-end justify-center sm:justify-start gap-x-2">
           <div className="max-w-sm px-2 my-2">
-            <label for="input-2" className="block font-bold py-2 text-gray-500">
+            <label htmlFor="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
             <div
@@ -161,7 +161,7 @@ const MyForm = () => {
             </div>
           </div>
           <div className="max-w-sm px-2 my-2">
-            <label for="input-2" className="block font-bold py-2 text-gray-500">
+            <label htmlFor="input-2" className="block font-bold py-2 text-gray-500">
               התחל להקליד
             </label>
             <div

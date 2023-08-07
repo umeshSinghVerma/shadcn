@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { useParams, useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
-export default function InsideEventLayout(props) {
+export default function InsideEventLayout(props:any) {
     const router = useRouter();
     const params = useParams();
-    const [currentComp, setCurrentComp] = useState(params.comp);
+    const [currentComp, setCurrentComp] = useState<any>(params.comp);
     useEffect(() => {
         setCurrentComp(params.comp);
     }, [params.comp])

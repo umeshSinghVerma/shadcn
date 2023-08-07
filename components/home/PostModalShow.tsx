@@ -1,6 +1,6 @@
 import React from "react";
 
-const PostModal = () => {
+const PostModalShow = () => {
   const features = [
     {
       icon: (
@@ -22,81 +22,17 @@ const PostModal = () => {
       title: "לפני 59 דקות",
       desc: "ממליצים ממליצים ממליצים!! אלון היקר שלנו! הבחירה הכי טובה שעשינו בכל החתונה הזו!! תודה לך! תודה על הסבלנות, הצחוקים ושהכלת את כל השגעונות שלנו! היית מדויק, הבנת בדיוק מה אנחנו אוהבים והוצאת לנו תמונות של מינימום דוגמנים! לא סתם קוראים לך Unique… אתה באמת מיוחד! מספר אחד! התאהבנו בכל הצוות שלך ובמיוחד בדימה האלוף שהצחיק והתחבב על כולם. מחכים בקוצר רוח לכל התמונות והסרטונים! תהיה בטוח שניפגש בעוד אירועים! אוהבים אותך המון",
       href: "javascript:void(0)",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          />
-        </svg>
-      ),
-      title: "לפני 59 דקות",
-      desc: "ממליצים ממליצים ממליצים!! אלון היקר שלנו! הבחירה הכי טובה שעשינו בכל החתונה הזו!! תודה לך! תודה על הסבלנות, הצחוקים ושהכלת את כל השגעונות שלנו! היית מדויק, הבנת בדיוק מה אנחנו אוהבים והוצאת לנו תמונות של מינימום דוגמנים! לא סתם קוראים לך Unique… אתה באמת מיוחד! מספר אחד! התאהבנו בכל הצוות שלך ובמיוחד בדימה האלוף שהצחיק והתחבב על כולם. מחכים בקוצר רוח לכל התמונות והסרטונים! תהיה בטוח שניפגש בעוד אירועים! אוהבים אותך המון",
-      href: "javascript:void(0)",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          />
-        </svg>
-      ),
-      title: "לפני 59 דקות",
-      desc: "ממליצים ממליצים ממליצים!! אלון היקר שלנו! הבחירה הכי טובה שעשינו בכל החתונה הזו!! תודה לך! תודה על הסבלנות, הצחוקים ושהכלת את כל השגעונות שלנו! היית מדויק, הבנת בדיוק מה אנחנו אוהבים והוצאת לנו תמונות של מינימום דוגמנים! לא סתם קוראים לך Unique… אתה באמת מיוחד! מספר אחד! התאהבנו בכל הצוות שלך ובמיוחד בדימה האלוף שהצחיק והתחבב על כולם. מחכים בקוצר רוח לכל התמונות והסרטונים! תהיה בטוח שניפגש בעוד אירועים! אוהבים אותך המון",
-      href: "javascript:void(0)",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-          />
-        </svg>
-      ),
-      title: "לפני 59 דקות",
-      desc: "ממליצים ממליצים ממליצים!! אלון היקר שלנו! הבחירה הכי טובה שעשינו בכל החתונה הזו!! תודה לך! תודה על הסבלנות, הצחוקים ושהכלת את כל השגעונות שלנו! היית מדויק, הבנת בדיוק מה אנחנו אוהבים והוצאת לנו תמונות של מינימום דוגמנים! לא סתם קוראים לך Unique… אתה באמת מיוחד! מספר אחד! התאהבנו בכל הצוות שלך ובמיוחד בדימה האלוף שהצחיק והתחבב על כולם. מחכים בקוצר רוח לכל התמונות והסרטונים! תהיה בטוח שניפגש בעוד אירועים! אוהבים אותך המון",
-      href: "javascript:void(0)",
-    },
+    }
   ];
-
   return (
-    <section className=" overflow-y-auto" style={{maxHeight:"400px"}}>
-      <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-        <div className="mt-2">
-          <ul className="flex flex-col gap-4">
+    <section className="bg-white" style={{ minWidth: '40vw' }}>
+      <div className="max-w-screen-xl h-full mx-auto text-gray-600">
+        <div>
+          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-1">
             {features.map((item, idx) => (
               <li
                 key={idx}
-                className="flex shadow-md p-3 items-center md:items-start md:flex-row md:justify-between gap-x-4  rounded-md"
+                className="flex items-center md:items-start md:flex-row md:justify-between gap-x-4  rounded-md"
                 style={{ flexDirection: 'column' }}
               >
                 <div className="flex w-full justify-between gap-x-4 items-center" style={{ fontSize: '10px' }}>
@@ -114,7 +50,7 @@ const PostModal = () => {
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
                         stroke="currentColor"
-                        class="w-6 h-6"
+                        className="w-6 h-6"
                       >
                         <path
                           stroke-linecap="round"
@@ -163,4 +99,4 @@ const PostModal = () => {
   );
 };
 
-export default PostModal;
+export default PostModalShow;

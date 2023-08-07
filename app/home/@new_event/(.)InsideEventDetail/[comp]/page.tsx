@@ -2,7 +2,7 @@ import PostModal from '@/components/home/PostModal'
 import Image from 'next/image'
 import React from 'react'
 
-export default function page({ params }) {
+export default function page({ params }:any) {
     const firstColumn = [
         {
             title: "Name",

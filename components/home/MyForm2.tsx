@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import DateSelector from "../Elements/DateSelector";
+import { DateSelector } from "../Elements/DateSelector";
 
 const MyForm2 = () => {
   const firstColumn = [
@@ -52,7 +52,7 @@ const MyForm2 = () => {
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-col flex-wrap">
               <label
-                for="input-1"
+                htmlFor="input-1"
                 className="block font-bold py-2 text-gray-500"
               >
                 התחל להקליד
@@ -85,7 +85,7 @@ const MyForm2 = () => {
           <div className="flex flex-col gap-y-4">
             <div className="flex flex-col flex-wrap">
               <label
-                for="input-1"
+                htmlFor="input-1"
                 className="block font-bold py-2 text-gray-500"
               >
                 התחל להקליד

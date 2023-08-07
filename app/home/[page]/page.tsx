@@ -4,8 +4,6 @@ import Page3 from '@/components/Pages/page3'
 import Page4 from '@/components/Pages/page4'
 import Page5 from '@/components/Pages/page5'
 import Page6 from '@/components/Pages/page6'
-import Table1 from '@/components/home/Table1'
-import Table2 from '@/components/home/Table2'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 

@@ -2,23 +2,23 @@
 import React, { useCallback, useRef, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-export default function Modal({ children }) {
-  const overlay = useRef(null);
-  const wrapper = useRef(null);
+export default function Modal({ children }:any) {
+  const overlay = useRef<HTMLDivElement | null>(null);
+  const wrapper = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
 
   const onDismiss = useCallback(() => {
     router.back();
   }, [router]);
 
-  const onClick = useCallback((e) => {
+  const onClick = useCallback((e:any) => {
     if (e.target === overlay.current || e.target === wrapper.current) {
       if (onDismiss) onDismiss();
     }
   }, [onDismiss]);
 
   const onKeyDown = useCallback(
-    (e) => {
+    (e:any) => {
       if (e.key === 'Escape') onDismiss();
     },
     [onDismiss]

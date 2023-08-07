@@ -206,12 +206,12 @@ const Sidebar = () => {
     
   ];
 
-  const profileRef = useRef();
+  const profileRef = useRef<HTMLDivElement | null>(null);
 
   const [isProfileActive, setIsProfileActive] = useState(false);
 
   useEffect(() => {
-    const handleProfile = (e) => {
+    const handleProfile = (e:any) => {
       if (profileRef.current && !profileRef.current.contains(e.target))
         setIsProfileActive(false);
     };
@@ -221,7 +221,7 @@ const Sidebar = () => {
   return (
     <>
       <nav className=" h-screen border-l bg-[#010030] text-white sm:w-72 w-16 py-8 sm:px-4">
-        <div class="flex flex-col h-full sm:px-4">
+        <div className="flex flex-col h-full sm:px-4">
           <div className="h-20 relative flex flex-col items-center pr-2">
             <div
               ref={profileRef}
