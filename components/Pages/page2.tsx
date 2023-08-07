@@ -1,8 +1,4 @@
 import React from "react";
-import Table1 from "../home/Table1";
-import DataStats from "../home/DataStats";
-import { Connections } from "../home/Connections";
-import Link from "next/link";
 import Table2 from "../home/Table2";
 import PaginationComp from "../Elements/PaginationComp";
 

@@ -7,7 +7,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 export default function DashboardLayout(props:any) {
 
     return (
-        <div className="w-screen h-screen flex overflow-auto">
+        <div className="w-screen h-screen flex overflow-auto" dir="rtl">
             <div>
                 <Sidebar />
             </div>
