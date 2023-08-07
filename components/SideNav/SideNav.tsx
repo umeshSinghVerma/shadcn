@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const SideNav = ({ isOpen, onClose, children }) => {
+const SideNav = ({ isOpen, onClose, children }:any) => {
   const [sideNavOpen, setSideNavOpen] = useState(isOpen);
 
   useEffect(() => {
     setSideNavOpen(isOpen);
   }, [isOpen]);
 
-  const handleSideNavClick = (event) => {
+  const handleSideNavClick = (event:any) => {
     event.stopPropagation();
   };
 
