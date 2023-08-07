@@ -7,7 +7,7 @@ import { Connections } from '@/components/home/Connections';
 import Table1 from '@/components/home/Table1';
 import Table4 from '../home/Table4';
 
-export default function Page1(props) {
+export default function Page1(props:any) {
     const currentComp = props.currentComp;
     return (
         <div className='flex flex-col w-full p-4  gap-y-8'>
