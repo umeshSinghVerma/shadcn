@@ -10,7 +10,6 @@ const MyForm = () => {
               התחל להקליד
             </label>
             <div
-              dir="ltr"
               className="flex items-center text-gray-400 border rounded-md"
             >
               <input
@@ -26,7 +25,7 @@ const MyForm = () => {
               התחל להקליד
             </label>
             <div
-              dir="ltr"
+              
               className="flex items-center text-gray-400 border rounded-md"
             >
               <input
@@ -48,7 +47,7 @@ const MyForm = () => {
                 התחל להקליד
               </label>
               <div
-                dir="ltr"
+                
                 className="flex flex-col gap-y-2 sm:flex-row items-center text-gray-400 gap-x-4"
               >
                 <input
@@ -73,7 +72,7 @@ const MyForm = () => {
                   התחל להקלי
                 </label>
                 <div
-                  dir="ltr"
+                   
                   className="flex items-center text-gray-400 border rounded-md"
                 >
                   <input
@@ -94,9 +93,8 @@ const MyForm = () => {
               >
                 התחל להקליד
               </label>
-              <div
-                dir="ltr"
-                className="flex flex-col-reverse min-[1000px]:flex-row items-center sm:items-end justify-center sm:justify-between text-gray-400 gap-y-8 min-[1000px]:gap-x-2"
+              <div       
+                className="flex flex-col-reverse min-[1000px]:flex-row-reverse items-center sm:items-start justify-center sm:justify-between text-gray-400 gap-y-8 min-[1000px]:gap-x-2"
               >
                 <div className="max-w-md flex flex-col-reverse sm:flex-row gap-x-2 gap-y-2">
                   <button className="w-full flex items-center gap-2 px-4 py-2 text-[#b0b0b0] bg-[#f7f7f7] rounded-lg">
@@ -149,7 +147,7 @@ const MyForm = () => {
               התחל להקליד
             </label>
             <div
-              dir="ltr"
+               
               className="flex items-center text-gray-400 border rounded-md"
             >
               <input
@@ -165,7 +163,7 @@ const MyForm = () => {
               התחל להקליד
             </label>
             <div
-              dir="ltr"
+               
               className="flex items-center text-gray-400 border rounded-md"
             >
               <input

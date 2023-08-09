@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import SideNav from './SideNav';
 import { SidenavContent } from './SidenavContent';
+import { Button } from '../ui/button';
 
 export default function SidenavUsable() {
     const [sidenavOpen, setSidenavOpen] = useState(false);
@@ -15,11 +16,11 @@ export default function SidenavUsable() {
     };
     return (
         <div className="flex">
-            <div onClick={handleSidenavToggle} className="cursor-pointer relative flex-none w-8 h-8 bg-white border border-gray text-white rounded-lg flex items-center justify-center">
+            <Button onClick={handleSidenavToggle} className="cursor-pointer relative flex-none h-8 bg-white border border-gray hover:bg-white text-white rounded-lg flex items-center justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="18"
+              height="18"
               viewBox="0 0 25 25"
               fill="none"
             >
@@ -43,7 +44,7 @@ export default function SidenavUsable() {
                 1
               </span>
             </div>
-          </div>
+          </Button>
             <SideNav isOpen={sidenavOpen} onClose={handleSidenavClose}>
                 <SidenavContent />
             </SideNav>
