@@ -1,7 +1,9 @@
 'use client'
 import { DateSelector } from '@/components/Elements/DateSelector'
+import { DropdownMenuRadioGroupDemo } from '@/components/Elements/Dropdown'
 import MultipleSelector from '@/components/Elements/MultipleSelector'
 import PostModal from '@/components/home/PostModal'
+import { Input } from '@/components/ui/input'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -78,7 +80,9 @@ export default function page({ params }:any) {
                             <div className='flex-col flex sm:flex-row text-sm gap-9 mt-4' style={{ minHeight: '200px' }}>
                                 <div className=' flex flex-col'>
                                     <p className='mb-2'>סוג האירוע *</p>
-                                    <MultipleSelector />
+                                    <div className='w-full'>
+                                        <DropdownMenuRadioGroupDemo title={"Select"} items = {["first","second","third","fourth"]}/>
+                                    </div>
                                 </div>
                                 <div className=' flex flex-col'>
                                     <p className='mb-2'>תאריך האירוע *</p>
@@ -86,11 +90,9 @@ export default function page({ params }:any) {
                                         <DateSelector />
                                     </div>
                                 </div>
-                                <div className=' flex flex-col'>
+                                <div className='px-2 flex flex-col'>
                                     <p className='mb-2'>מקום האירוע *</p>
-                                    <div className='flex text-xs border-gray-300 border  items-center rounded-md'>
-                                        <input type="text" className='h-full outline-none p-2 rounded-lg' />
-                                    </div>
+                                    <Input/>
                                 </div>
                             </div>
                             <div className='flex-col-reverse gap-2 sm:gap-0 sm:flex-row border-t-2 mt-4 border-solid border-gray flex justify-between items-center pt-8'>

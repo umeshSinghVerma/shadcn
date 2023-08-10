@@ -7,6 +7,7 @@ import { Connections } from '@/components/home/Connections';
 import Table1 from '@/components/home/Table1';
 import Table4 from '../home/Table4';
 import ImageComp from '../home/ImageComp';
+import { DropdownMenuRadioGroupDemo } from '../Elements/Dropdown';
 
 export default function Page1(props:any) {
     const currentComp = props.currentComp;
@@ -23,11 +24,7 @@ export default function Page1(props:any) {
                 השלם הגדרות פרופיל
               </span>
             </div>
-            <select className=" bg-transparent border border-gray outline-none rounded-lg p-1">
-              <option>חיפוש חופשי</option>
-              <option>חיפוש חופשי</option>
-              <option>חיפוש חופשי</option>
-            </select>
+            <DropdownMenuRadioGroupDemo title={"חיפוש חופשי"} items={["חיפוש חופשי","חיפוש חופשי","חיפוש חופשי"]}/>
           </div>
           <div className="w-full flex items-center justify-center">
             <img src="/TopbannerImage.png" alt="" />

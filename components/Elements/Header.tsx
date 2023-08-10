@@ -1,8 +1,16 @@
 'use client'
+'use client'
 import React from "react";
 import { useRouter } from "next/navigation";
 import SidenavUsable from "../SideNav/SidenavUsable";
 import { Button } from "../ui/button";
+import { Dialog } from "../ui/dialog";
+import { DialogDemo } from "./Dialog";
+import { DropdownMenuRadioGroupDemo } from "./Dropdown";
+import { DateSelector } from "./DateSelector";
+import { Input } from "../ui/input";
+import Link from "next/link";
+import InsideEventDetails from "./InsideEventDetails";
 
 const Header = () => {
   const router = useRouter();
@@ -13,7 +21,7 @@ const Header = () => {
         <span className="text-black px-1">כללי</span>
       </div>
       <div className="flex gap-x-3 min-[425px]:gap-x-8 items-center">
-        <Button className="flex items-center gap-2 px-2 min-[425px]:px-4 py-2 text-white rounded-lg bg-[#ED3C95] hover:bg-[#ED3C95]" onClick={()=>{
+        <Button className="flex items-center gap-2 px-2 min-[425px]:px-4 py-2 text-white rounded-lg bg-[#ED3C95] hover:bg-[#ED3C95]" onClick={() => {
           router.push('/home/Steps/1');
         }}>
           אירוע חדש
@@ -37,6 +45,9 @@ const Header = () => {
             </defs>
           </svg>
         </Button>
+        {/* <DialogDemo>
+          <InsideEventDetails/>
+        </DialogDemo> */}
         <div className="flex gap-x-2 min-[425px]:gap-x-4">
           <Button className="relative h-8 border border-gray rounded-lg flex items-center justify-center hover:bg-white bg-white">
             <svg
@@ -62,7 +73,6 @@ const Header = () => {
             </div>
           </Button>
           <SidenavUsable />
-
         </div>
       </div>
     </nav>
