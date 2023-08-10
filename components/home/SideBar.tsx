@@ -234,7 +234,7 @@ const Sidebar = () => {
             <div
               ref={profileRef}
               onClick={() => setIsProfileActive(!isProfileActive)}
-              className="sm:w-full border-[1px] border-gray-100 cursor-pointer rounded-3xl p-0 sm:py-2 sm:px-4 flex items-center gap-x-4 hover:bg-[#342bc2cc] hover:border-[1px] hover:border-black"
+              className="sm:w-full  cursor-pointer rounded-3xl p-0 sm:py-2 sm:px-4 flex items-center gap-x-4 hover:bg-[#342bc2cc] hover:border-[1px] hover:border-black"
             >
               <img
                 src="https://randomuser.me/api/portraits/women/79.jpg"
